@@ -1,6 +1,6 @@
 package pointers;
 
-public class Main {
+public class WithoutPointer {
 
     public static void main(String[] args) {
 
