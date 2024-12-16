@@ -6,6 +6,16 @@ public class LinkedList {
     private Node tail;
     private int length;
 
+    class Node {
+        int value;
+        Node next;
+
+        Node(int value){
+            this.value = value;
+        }
+    }
+
+
     public LinkedList(int value){
         Node newNode = new Node(value);
         head = newNode;
@@ -65,12 +75,15 @@ public class LinkedList {
         return temp;
     }
 
-    class Node {
-        int value;
-        Node next;
-
-        Node(int value){
-            this.value = value;
+    public void prepend(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
         }
+        length++;
     }
 }

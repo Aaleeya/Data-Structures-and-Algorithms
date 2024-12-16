@@ -9,10 +9,12 @@ public class Main {
         //myLinkedList.append(3);
         //myLinkedList.printList();
 
-        System.out.println(myLinkedList.removeLast().value);
-        //myLinkedList.getLength();
-        System.out.println(myLinkedList.removeLast().value);
-        System.out.println(myLinkedList.removeLast());
+//        System.out.println(myLinkedList.removeLast().value);
+//        //myLinkedList.getLength();
+//        System.out.println(myLinkedList.removeLast().value);
+//        System.out.println(myLinkedList.removeLast());
+        myLinkedList.prepend(24);
+        myLinkedList.printList();
 
     }
 }
