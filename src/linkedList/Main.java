@@ -13,8 +13,8 @@ public class Main {
 //        System.out.println(myLinkedList.removeLast().value);
 //        System.out.println(myLinkedList.removeLast());
         myLinkedList.prepend(1);
-        myLinkedList.removeFirst();
-        myLinkedList.printList();
+//        myLinkedList.removeFirst();
+        System.out.println(myLinkedList.get(2).value);
 
     }
 }
