@@ -4,17 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList myLinkedList = new LinkedList(2);
+        LinkedList myLinkedList = new LinkedList(11);
         myLinkedList.append(3);
-        //myLinkedList.printList();
+        myLinkedList.append(23);
+        myLinkedList.append(7);
 
-//        System.out.println(myLinkedList.removeLast().value);
-//        //myLinkedList.getLength();
-//        System.out.println(myLinkedList.removeLast().value);
-//        System.out.println(myLinkedList.removeLast());
-        myLinkedList.prepend(1);
-//        myLinkedList.removeFirst();
-        System.out.println(myLinkedList.get(2).value);
+        myLinkedList.set(1, 4);
+        myLinkedList.printList();
+
 
     }
 }
