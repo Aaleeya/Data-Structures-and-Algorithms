@@ -1,6 +1,6 @@
 package leetcodeProblems.linkedlist;
 
-public class LinkedList {
+public class LinkedList1 {
 
         private Node head;
         private Node tail;
@@ -14,7 +14,7 @@ public class LinkedList {
             }
         }
 
-        public LinkedList(int value) {
+        public LinkedList1(int value) {
             Node newNode = new Node(value);
             head = newNode;
             tail = newNode;
