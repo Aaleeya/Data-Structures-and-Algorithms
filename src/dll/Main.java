@@ -7,6 +7,8 @@ public class Main {
        // myDLL.removeFirst();
        // myDLL.removeLast();
         myDLL.insert(1, 2);
+        myDLL.remove(1);
+        myDLL.remove(0);
         myDLL.printList();
 
 
