@@ -6,6 +6,9 @@ public class Main {
 
         Queue myQueue = new Queue(7);
         myQueue.enqueue(23);
+        myQueue.enqueue(11);
+
+        myQueue.dequeue();
 
         myQueue.getFirst();
         myQueue.getLast();
