@@ -34,4 +34,14 @@ public class Hashtable {
             }
         }
     }
+
+    private int hash(String key){
+        int hash = 0;
+        char[] keyChars = key.toCharArray();
+        for(int i= 0; i< keyChars.length; i++){
+            int asciiValue = keyChars[i];
+            hash = (hash + asciiValue * 23) % dataMap.length; //datamap length = 7 so range = 0 to 6
+        }
+        return hash;
+    }
 }
