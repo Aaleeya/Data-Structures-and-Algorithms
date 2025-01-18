@@ -44,4 +44,22 @@ public class Hashtable {
         }
         return hash;
     }
+
+    public void set(String key, int value){
+        int index = hash(key);
+        Node newNode = new Node(key, value);
+        if(dataMap[index] == null){     //if dataMap at that index is empty i.e linkedlist is empty
+            dataMap[index] = newNode;   //add the newNode at that index
+        }
+        else {                           //there are items in linkedlist at that index
+            Node temp = dataMap[index]; //if there are multiple items stored at the same index -create a temp variable
+            //at the index
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+
+
+    }
 }
